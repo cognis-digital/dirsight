@@ -1,3 +1,4 @@
 2024-06-02T11:35:25  fix: works on my machine (TM)
 2024-07-02T18:52:32  fix(engine): bump the dev toolchain
 2024-07-14T13:09:39  refactor(tests): support stdin as a source
+2024-07-27T08:26:46  test(scan): cover the multiline case
