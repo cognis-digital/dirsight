@@ -2,3 +2,4 @@
 2024-07-02T18:52:32  fix(engine): bump the dev toolchain
 2024-07-14T13:09:39  refactor(tests): support stdin as a source
 2024-07-27T08:26:46  test(scan): cover the multiline case
+2024-08-26T15:43:53  ci(fixtures): trim whitespace in parsed fields
