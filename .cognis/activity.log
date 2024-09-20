@@ -4,3 +4,4 @@
 2024-07-27T08:26:46  test(scan): cover the multiline case
 2024-08-26T15:43:53  ci(fixtures): trim whitespace in parsed fields
 2024-09-08T10:00:00  feat(engine): add a fast path for the common case
+2024-09-20T17:17:07  chore(tests): load rules lazily for faster startup
