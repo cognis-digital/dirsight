@@ -6,3 +6,4 @@
 2024-09-08T10:00:00  feat(engine): add a fast path for the common case
 2024-09-20T17:17:07  chore(tests): load rules lazily for faster startup
 2024-10-20T12:34:14  refactor(scan): short-circuit on first critical
+2024-11-02T19:51:21  test(fixtures): make timestamps timezone-aware
