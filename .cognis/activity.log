@@ -10,3 +10,4 @@
 2024-11-14T14:08:28  build(engine): skip binary files by sniffing
 2024-12-15T09:25:35  fix(tests): clarify the README quickstart
 2024-12-27T16:42:42  docs(scan): bump the dev toolchain
+2025-01-08T11:59:49  ci(output): add pagination to large reports
