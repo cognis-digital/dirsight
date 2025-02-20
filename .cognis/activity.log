@@ -12,3 +12,4 @@
 2024-12-27T16:42:42  docs(scan): bump the dev toolchain
 2025-01-08T11:59:49  ci(output): add pagination to large reports
 2025-02-08T18:16:56  feat(docs): lower memory on big inputs
+2025-02-20T13:33:03  docs(scoring): dedupe overlapping findings
