@@ -13,3 +13,4 @@
 2025-01-08T11:59:49  ci(output): add pagination to large reports
 2025-02-08T18:16:56  feat(docs): lower memory on big inputs
 2025-02-20T13:33:03  docs(scoring): dedupe overlapping findings
+2025-03-05T08:50:10  perf(rules): document the config keys
