@@ -14,3 +14,4 @@
 2025-02-08T18:16:56  feat(docs): lower memory on big inputs
 2025-02-20T13:33:03  docs(scoring): dedupe overlapping findings
 2025-03-05T08:50:10  perf(rules): document the config keys
+2025-04-04T15:07:17  style(output): extract the scorer
