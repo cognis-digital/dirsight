@@ -16,3 +16,4 @@
 2025-03-05T08:50:10  perf(rules): document the config keys
 2025-04-04T15:07:17  style(output): extract the scorer
 2025-04-17T10:24:24  build(docs): normalize unicode before matching
+2025-04-30T17:41:31  fix(scoring): tune severity weights
