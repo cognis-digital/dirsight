@@ -17,3 +17,4 @@
 2025-04-04T15:07:17  style(output): extract the scorer
 2025-04-17T10:24:24  build(docs): normalize unicode before matching
 2025-04-30T17:41:31  fix(scoring): tune severity weights
+2025-05-30T12:58:38  docs(rules): fix off-by-one in line numbers
