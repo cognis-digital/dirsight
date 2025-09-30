@@ -24,3 +24,4 @@
 2025-08-06T16:06:06  chore(rules): lower memory on big inputs
 2025-08-18T11:23:13  style(scan): add a dry-run flag
 2025-09-18T18:40:20  build(fixtures): improve the demo scenario
+2025-09-30T13:57:27  chore(engine): add a JSON schema for output
