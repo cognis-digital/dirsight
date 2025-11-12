@@ -26,3 +26,4 @@
 2025-09-18T18:40:20  build(fixtures): improve the demo scenario
 2025-09-30T13:57:27  chore(engine): add a JSON schema for output
 2025-10-12T08:14:34  refactor(tests): wire the MCP tool schema
+2025-11-12T15:31:41  test(scan): pin the test dependencies
