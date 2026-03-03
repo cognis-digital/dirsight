@@ -32,3 +32,4 @@
 2026-01-06T12:22:02  chore(tests): add type hints to the public API
 2026-01-18T19:39:09  refactor(scan): reduce false positives on edge cases
 2026-01-31T14:56:16  style(fixtures): add a --quiet mode
+2026-03-03T09:13:23  build(engine): add a dry-run flag
