@@ -36,3 +36,4 @@
 2026-03-16T16:30:30  refactor(scoring): add a regression fixture
 2026-03-28T11:47:37  test(rules): handle CRLF line endings
 2026-04-27T18:04:44  ci(output): stream large files without buffering
+2026-05-10T13:21:51  fix(docs): guard against ReDoS in patterns
