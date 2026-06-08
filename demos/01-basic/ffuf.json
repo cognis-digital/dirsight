@@ -1,0 +1,18 @@
+{
+  "commandline": "ffuf -u https://app.example.com/FUZZ -w wordlist.txt -o ffuf.json -of json",
+  "time": "2026-06-08T09:00:00Z",
+  "results": [
+    {"url": "https://app.example.com/.git/config", "status": 200, "length": 412, "words": 60, "lines": 20, "redirectlocation": ""},
+    {"url": "https://app.example.com/.env", "status": 200, "length": 318, "words": 28, "lines": 14, "redirectlocation": ""},
+    {"url": "https://app.example.com/admin", "status": 302, "length": 0, "words": 0, "lines": 0, "redirectlocation": "https://app.example.com/login"},
+    {"url": "https://app.example.com/backup.sql", "status": 200, "length": 91022, "words": 5120, "lines": 880, "redirectlocation": ""},
+    {"url": "https://app.example.com/api/v1/swagger.json", "status": 200, "length": 20480, "words": 3000, "lines": 1, "redirectlocation": ""},
+    {"url": "https://app.example.com/server-status", "status": 403, "length": 290, "words": 22, "lines": 10, "redirectlocation": ""},
+    {"url": "https://app.example.com/about", "status": 200, "length": 4242, "words": 410, "lines": 120, "redirectlocation": ""},
+    {"url": "https://app.example.com/contact", "status": 200, "length": 4242, "words": 410, "lines": 120, "redirectlocation": ""},
+    {"url": "https://app.example.com/help", "status": 200, "length": 4242, "words": 410, "lines": 120, "redirectlocation": ""},
+    {"url": "https://app.example.com/news", "status": 200, "length": 4242, "words": 410, "lines": 120, "redirectlocation": ""},
+    {"url": "https://app.example.com/team", "status": 200, "length": 4242, "words": 410, "lines": 120, "redirectlocation": ""},
+    {"url": "https://app.example.com/images", "status": 301, "length": 0, "words": 0, "lines": 0, "redirectlocation": "https://app.example.com/images/"}
+  ]
+}
