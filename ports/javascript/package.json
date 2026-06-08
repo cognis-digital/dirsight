@@ -1,0 +1,10 @@
+{
+  "name": "@cognis/dirsight",
+  "version": "0.2.0",
+  "description": "JavaScript port of dirsight (Cognis Neural Suite)",
+  "bin": {
+    "dirsight": "index.js"
+  },
+  "license": "LicenseRef-COCL-1.0",
+  "type": "module"
+}
