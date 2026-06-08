@@ -36,9 +36,12 @@ signal from dirbusting noise
 <a name="features"></a>
 ## Features
 
-- ✅ Todo
-- ✅ Fixme
-- ✅ Xxx
+- ✅ Parse Ffuf Json
+- ✅ Parse Gobuster Text
+- ✅ Parse Auto
+- ✅ Score Finding
+- ✅ Analyze
+- ✅ Summarize
 - ✅ Runs on Linux/macOS/Windows · Docker · devcontainer
 - ✅ Ports in Python, JavaScript, Go, and Rust (`ports/`)
 
