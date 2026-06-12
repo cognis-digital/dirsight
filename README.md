@@ -16,7 +16,7 @@
 </div>
 
 ```bash
-pip install cognis-dirsight
+pip install "git+https://github.com/cognis-digital/dirsight.git"
 dirsight scan .            # → prioritized findings in seconds
 ```
 
@@ -51,7 +51,7 @@ signal from dirbusting noise
 ## Quick start
 
 ```bash
-pip install cognis-dirsight
+pip install "git+https://github.com/cognis-digital/dirsight.git"
 dirsight --version
 dirsight scan .                       # scan current project
 dirsight scan . --format json         # machine-readable
