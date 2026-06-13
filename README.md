@@ -20,6 +20,39 @@ pip install cognis-dirsight
 dirsight scan .            # → prioritized findings in seconds
 ```
 
+## Usage — step by step
+
+1. Install the CLI (Python 3.9+):
+
+   ```bash
+   pip install dirsight       # or: pip install .   from a checkout
+   ```
+
+2. Analyze a content-discovery results file — the `analyze` subcommand ranks ffuf/gobuster output into high-interest endpoints (auto-detects the format):
+
+   ```bash
+   dirsight analyze ffuf-out.json
+   ```
+
+3. Be explicit about the source and prefix gobuster paths with a base URL when needed:
+
+   ```bash
+   dirsight analyze gobuster.txt --source gobuster --base-url https://target.example.com
+   ```
+
+4. Read the output — use `--format json` and filter by score; the exit code gates CI (`0` clean, `1` internal error, `2` high-interest findings present):
+
+   ```bash
+   dirsight analyze ffuf-out.json --format json --min-score 5 | jq '.findings[].path'
+   ```
+
+5. Wire it into CI for authorized testing — the run fails (exit 2) when high-interest paths surface:
+
+   ```bash
+   cat ffuf-out.json | dirsight analyze - --min-score 7 || echo "review high-interest endpoints"
+   ```
+
+
 ## Contents
 
 - [Why dirsight?](#why) · [Features](#features) · [Quick start](#quick-start) · [Example](#example) · [Architecture](#architecture) · [AI stack](#ai-stack) · [How it compares](#how-it-compares) · [Integrations](#integrations) · [Install anywhere](#install-anywhere) · [Related](#related) · [Contributing](#contributing)
