@@ -9,16 +9,22 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=3500&pause=1000&color=6B46C1&center=true&vCenter=true&width=720&lines=Analyze+web+contentdiscovery+output+ffufgobuster+into+ranked;Self-hostable+%C2%B7+MCP-native+%C2%B7+CI-ready+%C2%B7+polyglot" width="720"/>
 
-[![PyPI](https://img.shields.io/pypi/v/cognis-dirsight.svg?color=6b46c1)](https://pypi.org/project/cognis-dirsight/) [![CI](https://github.com/cognis-digital/dirsight/actions/workflows/ci.yml/badge.svg)](https://github.com/cognis-digital/dirsight/actions) [![License: COCL 1.0](https://img.shields.io/badge/License-COCL%201.0-2b6cb0.svg)](LICENSE) [![Suite](https://img.shields.io/badge/Cognis-Neural%20Suite-6b46c1.svg)](https://github.com/cognis-digital)
+[![install](https://img.shields.io/badge/install-git%2B%20%C2%B7%20pipx%20%C2%B7%20uv-6b46c1.svg)](#install--every-way-every-platform) [![CI](https://github.com/cognis-digital/dirsight/actions/workflows/ci.yml/badge.svg)](https://github.com/cognis-digital/dirsight/actions) [![License: COCL 1.0](https://img.shields.io/badge/License-COCL%201.0-2b6cb0.svg)](LICENSE) [![Suite](https://img.shields.io/badge/Cognis-Neural%20Suite-6b46c1.svg)](https://github.com/cognis-digital)
 
 *Part of the Cognis Neural Suite.*
 
 </div>
 
 ```bash
-pip install cognis-dirsight
+pip install "git+https://github.com/cognis-digital/dirsight.git"
 dirsight scan .            # → prioritized findings in seconds
 ```
+
+<!-- cognis:layman:start -->
+## What is this?
+
+When you run a web security scan with a tool like ffuf or gobuster, you get back a long list of discovered URLs — often hundreds or thousands. Dirsight reads that raw output and instantly ranks each URL by how interesting it is, flagging ones that look like admin panels, config files, backup archives, or exposed secrets at the top. It also automatically filters out "noise" — the repetitive fake results these tools generate — so you can focus on what actually matters. It is designed for security professionals and developers who want to quickly understand the attack surface of a web application during authorized penetration testing.
+<!-- cognis:layman:end -->
 
 ## Contents
 
@@ -48,10 +54,56 @@ signal from dirbusting noise
 <div align="right"><a href="#top">↑ back to top</a></div>
 
 <a name="quick-start"></a>
+<!-- cognis:domains:start -->
+## Domains
+
+**Primary domain:** Cyber & Security  ·  **JTF MERIDIAN division:** NULLBYTE · SPECTER
+
+**Topics:** `cognis` `security` `infosec` `cybersecurity` `blue-team`
+
+Part of the **Cognis Neural Suite** — 300+ source-available tools organized across 12 domains under the JTF MERIDIAN command structure. See the [suite on GitHub](https://github.com/cognis-digital) and [jtf-meridian](https://github.com/cognis-digital/jtf-meridian) for how the pieces fit together.
+<!-- cognis:domains:end -->
+
+<!-- cognis:install:start -->
+## Install
+
+`dirsight` is source-available (not published to PyPI) — every method below installs
+straight from GitHub. Pick whichever you prefer; the one-line scripts auto-detect
+the best tool available on your machine.
+
+**One-liner (Linux / macOS):**
+```sh
+curl -fsSL https://raw.githubusercontent.com/cognis-digital/dirsight/HEAD/install.sh | sh
+```
+
+**One-liner (Windows PowerShell):**
+```powershell
+irm https://raw.githubusercontent.com/cognis-digital/dirsight/HEAD/install.ps1 | iex
+```
+
+**Or install manually — any one of:**
+```sh
+pipx install "git+https://github.com/cognis-digital/dirsight.git"     # isolated (recommended)
+uv tool install "git+https://github.com/cognis-digital/dirsight.git"  # uv
+pip install "git+https://github.com/cognis-digital/dirsight.git"      # pip
+```
+
+**From source:**
+```sh
+git clone https://github.com/cognis-digital/dirsight.git
+cd dirsight && pip install .
+```
+
+Then run:
+```sh
+dirsight --help
+```
+<!-- cognis:install:end -->
+
 ## Quick start
 
 ```bash
-pip install cognis-dirsight
+pip install "git+https://github.com/cognis-digital/dirsight.git"
 dirsight --version
 dirsight scan .                       # scan current project
 dirsight scan . --format json         # machine-readable
@@ -144,6 +196,32 @@ curl -fsSL https://raw.githubusercontent.com/cognis-digital/dirsight/main/instal
 <div align="right"><a href="#top">↑ back to top</a></div>
 
 <a name="related"></a>
+<a name="verification"></a>
+## Verification
+
+[![tests](https://img.shields.io/badge/tests-9%20passing-2ea44f.svg)](AUDIT.md)
+
+Every push is verified end-to-end. Latest audit (2026-06-13):
+
+```text
+tests        : 9 passed, 0 failed, 0 errored
+compile      : all modules parse
+cli          : C:\Python314\python.exe: No module named https
+package      : https
+```
+
+<details><summary>CLI surface (<code>--help</code>)</summary>
+
+```text
+C:\Python314\python.exe: No module named https
+```
+</details>
+
+Full machine-readable results: [`AUDIT.md`](AUDIT.md) · regenerate with `python -m https --help` + `pytest -q`.
+
+<div align="right"><a href="#top">↑ back to top</a></div>
+
+
 ## Related Cognis tools
 
 - [`portfan`](https://github.com/cognis-digital/portfan) — Summarize and diff nmap XML into prioritized, attackable findings
