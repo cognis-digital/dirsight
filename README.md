@@ -20,6 +20,12 @@ pip install "git+https://github.com/cognis-digital/dirsight.git"
 dirsight scan .            # → prioritized findings in seconds
 ```
 
+<!-- cognis:layman:start -->
+## What is this?
+
+When you run a web security scan with a tool like ffuf or gobuster, you get back a long list of discovered URLs — often hundreds or thousands. Dirsight reads that raw output and instantly ranks each URL by how interesting it is, flagging ones that look like admin panels, config files, backup archives, or exposed secrets at the top. It also automatically filters out "noise" — the repetitive fake results these tools generate — so you can focus on what actually matters. It is designed for security professionals and developers who want to quickly understand the attack surface of a web application during authorized penetration testing.
+<!-- cognis:layman:end -->
+
 ## Contents
 
 - [Why dirsight?](#why) · [Features](#features) · [Quick start](#quick-start) · [Example](#example) · [Architecture](#architecture) · [AI stack](#ai-stack) · [How it compares](#how-it-compares) · [Integrations](#integrations) · [Install anywhere](#install-anywhere) · [Related](#related) · [Contributing](#contributing)
@@ -48,6 +54,42 @@ signal from dirbusting noise
 <div align="right"><a href="#top">↑ back to top</a></div>
 
 <a name="quick-start"></a>
+<!-- cognis:install:start -->
+## Install
+
+`dirsight` is source-available (not published to PyPI) — every method below installs
+straight from GitHub. Pick whichever you prefer; the one-line scripts auto-detect
+the best tool available on your machine.
+
+**One-liner (Linux / macOS):**
+```sh
+curl -fsSL https://raw.githubusercontent.com/cognis-digital/dirsight/HEAD/install.sh | sh
+```
+
+**One-liner (Windows PowerShell):**
+```powershell
+irm https://raw.githubusercontent.com/cognis-digital/dirsight/HEAD/install.ps1 | iex
+```
+
+**Or install manually — any one of:**
+```sh
+pipx install "git+https://github.com/cognis-digital/dirsight.git"     # isolated (recommended)
+uv tool install "git+https://github.com/cognis-digital/dirsight.git"  # uv
+pip install "git+https://github.com/cognis-digital/dirsight.git"      # pip
+```
+
+**From source:**
+```sh
+git clone https://github.com/cognis-digital/dirsight.git
+cd dirsight && pip install .
+```
+
+Then run:
+```sh
+dirsight --help
+```
+<!-- cognis:install:end -->
+
 ## Quick start
 
 ```bash
